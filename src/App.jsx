@@ -1,8 +1,10 @@
 import { motion, useScroll, useTransform } from "framer-motion";
+import { link } from "framer-motion/client";
 import {
   ArrowUpRight,
   Github,
   Instagram,
+  Link,
   Linkedin,
   Mail,
   Sparkles,
@@ -11,6 +13,7 @@ import {
 const portraitSrc = `${import.meta.env.BASE_URL}Pi7_Passport_Photo.jpeg`;
 
 const featuredProjects = [
+
   {
     title: "OriginGuard AI Detector",
     year: "2025",
@@ -113,7 +116,6 @@ const socialLinks = [
     href: "https://www.linkedin.com/in/pratikaher9/",
     label: "LinkedIn",
   },
-  { icon: Instagram, href: "https://instagram.com/", label: "Instagram" },
 ];
 
 const reveal = {
@@ -325,7 +327,7 @@ export default function PratikPortfolio() {
             </div>
           </div>
 
-          <div className="absolute bottom-8 left-6 flex flex-col gap-4 text-white/80 md:left-10">
+          <div className="absolute bottom-8 left-6 flex flex-col gap-4 text-white/80 md:left-10 md:flex">
             {socialLinks.map((item) => {
               const Icon = item.icon;
               return (
@@ -344,7 +346,7 @@ export default function PratikPortfolio() {
           </div>
 
           <a
-            href="#work"
+            href={`${import.meta.env.BASE_URL}resume.pdf`}
             className="absolute bottom-10 right-6 text-[11px] uppercase tracking-[0.45em] text-white/45 transition hover:text-white/80 md:right-10"
           >
             Resume
@@ -393,6 +395,9 @@ export default function PratikPortfolio() {
                 <h3 className="mt-4 text-3xl font-semibold uppercase tracking-tight md:text-5xl">
                   Selected projects
                 </h3>
+                <p className="text-white/60 mt-4 mb-8 max-w-2xl">
+                  A selection of AI/ML systems and backend applications focused on building scalable, intelligent, and production-ready solutions.
+                </p>
               </div>
               <a
                 href="https://github.com/Aherpratik?tab=repositories"
