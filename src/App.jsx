@@ -13,7 +13,24 @@ import {
 const portraitSrc = `${import.meta.env.BASE_URL}Pi7_Passport_Photo.jpeg`;
 
 const featuredProjects = [
-
+  {
+    title: "Adaptive Traffic Signal Control",
+    year: 2026,
+    description:
+      "Built a reinforcement learning traffic control system using Python, SUMO, and TraCI, where a Q-learning agent dynamically switched signal phases based on lane-level queue states to reduce congestion and improve traffic flow in simulation.",
+    stack: ["Python", "SUMO", "TraCI", "Reinforcement Learning", "Q-Learning"],
+    link: "https://github.com/Aherpratik/Adaptive-traffic-control",
+    
+  },
+  {
+    title: "Dynamic HTML Table Ingestion Pipeline",
+    year: 2026,
+    description:
+      "Built an end-to-end data pipeline in Go that extracts structured data from public HTML tables, infers schema dynamically, streams rows through Kafka, stores them in PostgreSQL, and exposes the data through an API and adaptive frontend dashboard.",
+    stack: ["Go", "Kafka", "PostgreSQL", "Docker", "GoQuery", "TypeScript"],
+    link: "https://github.com/Aherpratik/table-pipeline",
+    
+  },
   {
     title: "OriginGuard AI Detector",
     year: "2025",
