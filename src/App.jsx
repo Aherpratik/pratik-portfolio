@@ -344,7 +344,7 @@ export default function PratikPortfolio() {
             </div>
           </div>
 
-          <div className="absolute bottom-8 left-6 flex flex-col gap-4 text-white/80 md:left-10 md:flex">
+          <div className="absolute bottom-8 left-6 hidden flex-col gap-4 text-white/80 md:left-10 md:flex">
             {socialLinks.map((item) => {
               const Icon = item.icon;
               return (
