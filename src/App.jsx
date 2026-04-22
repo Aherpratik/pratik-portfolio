@@ -14,6 +14,15 @@ const portraitSrc = `${import.meta.env.BASE_URL}Pi7_Passport_Photo.jpeg`;
 
 const featuredProjects = [
   {
+    title: "ClauseIQ",
+    year: 2026,
+    category: "GenAI / RAG",
+    description:
+      "Built an end-to-end legal document intelligence system using RAG, FAISS, and a locally hosted LLM (Mistral via Ollama). It supports PDF upload, text extraction, semantic retrieval, structured analysis, risk detection, and grounded question answering with source-backed outputs.",
+    stack: ["FastAPI", "React", "FAISS", "SentenceTransformers", "Ollama", "Docker"],
+    link: "https://github.com/Aherpratik/ClauseIQ",
+  },
+  {
     title: "Adaptive Traffic Signal Control",
     year: 2026,
     description:
@@ -413,7 +422,7 @@ export default function PratikPortfolio() {
                   Selected projects
                 </h3>
                 <p className="text-white/60 mt-4 mb-8 max-w-2xl">
-                  A selection of AI/ML systems and backend applications focused on building scalable, intelligent, and production-ready solutions.
+                  A selection of AI, RAG, machine learning, and backend systems focused on building scalable, intelligent, and production-ready applications.
                 </p>
               </div>
               <a
